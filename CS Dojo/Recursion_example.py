@@ -15,3 +15,19 @@ def fib(n):
         return 1
 
       
+# frog problem
+
+def frog(n):
+    if n>=1:
+        return frog(n-1)+frog(n-2)
+    else:
+        return 1
+      
+def frog2(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return  frog(n-1)+frog(n-2)
+
+frog2(10)      
+      
